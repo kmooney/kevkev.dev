@@ -1,7 +1,109 @@
 <!doctype html>
-<html lang="en"><head><title>hello there</title></head>
-<link rel="stylesheet" href="style.css"/>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>why hello there</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="icon" href="pics/kevin-favicon.gif"/>
+        <script src="fancy.js"></script>
+    </head>
 <body>
-well hello there.
+    <section class="menu">
+        <ul>
+            <li><span class="fancy">kevin@kevdog.cool</span></li>
+            <li><a target="gh_" href="https://github.com/kmooney">github</a></li>
+            <li><a target="tw_" href="https://twitter.com/MayorCloudCity">some tweets</a></li>
+            <li> <a href="#" class="darkmode">dark mode?</a></li>
+            <li><a href="#" class="funmode">fun mode?</a></li>
+        </ul>
+    </section>
+    <div class="words">
+        <section class="content about">
+            <h1>kevkev.dev</h1>
+            <div class="card">
+                <p>
+                    <span><img src="pics/kevkev2.gif" alt="animated gif of myself" width="50"></span>
+                    Hey, this is my website - I&rsquo;m Kevin, and I am a person living in Austin Texas.
+                    I like making weird things to share with my friends, and this is a place
+                    for sharing those things. During the day, I work on seller tools at 
+                    <a target="bc_" href="https://bandcamp.com">Bandcamp</a> and the rest of the time, I futz around with music
+                    and I read some books. I make games sometimes. They don&rsquo;t have goals always, so maybe some of them are Art. 
+                    I also run a bit; I&rsquo;ll run my second marathon in a few weeks.
+                    Let&rsquo;s be real, I also watch a lot of Netflix.
+                </p>
+            </div>
+        </section>
+        <section class="content projects">
+            <h1>Projects</h1>
+            <p>
+                I&rsquo;ve worked on a few projects during the pandemic era:
+                I made a Telnet-powered &ldquo;falling blocks game&rdquo; in rust <a class="aside" href="https://github.com/kmooney/tetrix">(github)</a> 
+                that works pretty well. I also have made a bunch of games with my pal Nik <a class="aside" href="https://nikolajbaer.us">(web site)</a>.
+                Some of them are pretty fun! Some are better than others. We played around with constructing a few games in javascript,
+                    but we&rsquo;ve also played around with <a href="https://godotengine.org">Godot</a> and I have spent a bit of time with Unity.
+            </p>
+            <h2>Blocko
+                <a class="aside" href="telnet://blocko.kevkev.dev">(play)</a>
+                <a class="aside" href="https://github.com/kmooney/tetrix">(github)</a>
+            </h2>
+            <p>
+                Blocko is a client-server falling blocks game. Blocko is a rust library that knows how to play a certain
+                familiar game where you try to make lines to make the fallen blocks go away. Blocko is a Telnet daemon running
+                at <a href="telnet://blocko.kevkev.dev"><span class="code">blocko.kevkev.dev</span></a>.
+            </p>
+            <p>
+                At first I called this thing Tetrix, but it seems to me like the name is too similar to 
+                a certain registered trademark and all that. So now it's called &ldquo;Blocko.&rdquo;
+            </p>
+            <p>
+                Maybe one day, I&rsquo;ll make more Blocko middlewares. Right now, you can only interact with Blocko via Telnet.
+            </p>
+            <h2>The circle 
+                <a class="aside" href="https://circle.kevkev.dev">(play)</a>
+                <a class="aside" href="https://ldjam.com/events/ludum-dare/47/the-circle-3d-web-game">(ldjam)</a>
+            </h2>
+            <p>
+                This is one Nik and I worked on together, for Ludum Dare 47. It was a fun project! I kept trying to make the game harder
+                by messing around with the controls, and he kept trying to make it easier and more approachable.
+                I made the music and sound, some of the graphics (I think I figured out how to make the shaders for shiny surfaces on the loops), 
+                Nik figured out how to make the spaceship follow any 3D path (though in our release for the jam, it only follows a looping path) 
+                and he knows what a &ldquo;quaternion&rdquo; is 🤷‍♀️. We borrowed the code to generate the starfield from a dentist office&rsquo;s website.
+            </p>
+            <p>People liked this game! </p>
+            <h2>Oumuamua, the interstellar traveller
+                <a class="aside" href="https://ld48.nikolaj.dev/">(play)</a>
+                <a class="aside" href="https://ldjam.com/events/ludum-dare/48/oumuamua-from-outer-space-to-deeper-and-deepr-down-the-well">(ldjam)</a></h3>
+            </h2>
+            <p>
+                This is one of my favorite games we made together; this one was for Ludum Dare 48. We wanted to make a gravity
+                slingshotting game, but it was too hard to play, so I suggested we draw a line that predicted the path of the spaceship.
+                Nik thought that would be too hard, but he knows about &ldquo;quaternions&rdquo; and it turned out not to be too hard to 
+                implement. We also used an early version of Nik&rsquo;s JS game engine, <a href="https://github.com/nikolajbaer/gokart.js">gokartjs</a>.
+                It&rsquo;s an ECS. Once we spent a day with it, it was really easy to dream up a new feature and bolt it into the game to see
+                how it worked. Very fun! I also made the graphics for all the little planets and made the music. Your trajectory jiggles about,
+                based on the positions of the planets (the planets themselves have static orbits, this is just a game after all!)
+            </p>
+            <p>I think this is probably my favorite game I&rsquo;ve helped make. It&rsquo;s still fun to play and kind of zone out and watch it, even now.
+                Buckminster Fuller said that there&rsquo;s no &ldquo;up&rdquo; or &ldquo;down&rdquo;, there&rsquo;s only &ldquo;in&rdquo; or &ldquo;out.&rdquo;
+                I think about that sometimes when I&rsquo;m playing this one.
+            </p>
+            <p>
+                One of my favorite things about this game is that when you die, the game over screen lets you start over, or just accept it and let the 
+                universe continue without you.
+            </p>
+        </section>
+        <!--<section class="content photos">
+            <h1>Photos</h1>
+            <p>Here's some photos!</p>
+            <article class="photogallery">
+                <div class="photo">TKTK</div>
+                <div class="photo">TKTK</div>
+                <div class="photo">TKTK</div>
+                <div class="photo">TKTK</div>
+                <div class="photo">TKTK</div>
+            </article>
+        </section>-->
+    </div>
+    <script src="foot.js"></script>
 </body>
 </html>
