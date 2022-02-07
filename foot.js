@@ -12,7 +12,6 @@
             }
             if (!funMode) {
                 window.clearInterval(timer);
-                random_theme();
                 localEl.text="fun mode?";
             }
             return false;

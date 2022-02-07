@@ -76,7 +76,7 @@ h1 {
     color: hsl(var(--texthue), 100%, 85%);
 }
 h2 {
-    color: hsl(calc(var(--texthue) + 180), 100%, 30%);
+    color: hsl(calc(var(--texthue) + 90), 100%, 30%);
     font-size: 1.5em;
 }
 .dark h2 {
